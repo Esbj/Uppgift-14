@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Enkel floatlayout</title>
+<style type="text/css">
+/*
+(kinabild)
+färger:
+röd: 	#b53623;
+grön: #20574a;
+blå: 	#325aac;
+*/ 
+body {
+	margin:0;
+	padding:0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	background-color :#b53623;
+	color: #fff;
+}
+#container {
+	width:600px;
+	margin:0 auto 0 auto;      /*margin:0 auto; */
+	border-width: 0 2px 0 2px;
+	border-color: #444;
+	border-style: solid;
+	overflow:auto;
+	background-image: url('bg_container.jpg');
+	background-repeat: repeat-y;
+}
+#header {
+	background-image:url('bg_header.jpg');
+	height:107px;
+}
+#nav{
+	float: left;
+	width: 130px;
+}
+#main {
+	float: right;
+	width: 445px;
+	padding-right: 10px;
+}
+#footer{
+	clear:both;
+	text-align: center;
+	color: #fff;
+	background-color: #444;
+	padding: 15px;
+}
+a{
+ color: #fff;
+ display: block;
+ padding-bottom: 5px;
+}
+#nav a{
+ text-decoration: none;
+}
+#nav a:hover{
+ border-bottom: 5px solid #b53623;
+ padding-bottom:0;
+}
+ul {
+ list-style-type: none;
+ padding-left: 10px;
+}
+h1{
+	background-color: #fff;
+	color: #325aac;
+	padding: 15px 15px 8px 40px;
+	margin-top: 0;
+	margin: 0 0 0 -14px;
+}
+.floatleft {
+ float: left;
+ margin-right: 10px;
+}
+.floatright{
+ float: right;
+ margin-left: 10px;
+}
+</style>
+
+</head>
+
+<body>
+<div id="container">
+	
+  <div  id="header">
+		<!-- Inget innehål - enbart en bakgrundsbild -->
+	</div> <!-- header -->
+	
+	<div id="nav">
+	  <ul>
+	    <li>
+	      <a href="#">Länk 1</a>
+	     </li>
+	    <li>
+	      <a href="#">Länk 2</a>
+	     </li>
+	    <li>
+	      <a href="#">Länk 3</a>
+	     </li>
+	    <li>
+	      <a href="#">Länk 4</a>
+	     </li>
+	    <li>
+	      <a href="#">Länk 5</a>
+	     </li>          
+	  </ul>
+	</div> <!-- nav -->
+	
+  <div id="main">
+	  <h1>Enkel floatlayout</h1>
+	  <p>Bacon ipsum dolor sit amet tri-tip boudin turducken bresaola bacon. Beef turkey pork loin kielbasa tenderloin, shankle ribeye swine. Salami venison capicola, beef biltong turkey ground round short loin jerky meatloaf short ribs kielbasa bresaola flank tail. Turkey strip steak rump, prosciutto beef tail hamburger ground round pig turducken pork belly shank pork chop.
+	    
+	    Bacon sausage fatback prosciutto, <a href="#">pancetta turducken pork chop jerky tongue swine shoulder</a>. Tri-tip spare ribs swine strip steak jowl biltong, beef ribs shank shankle fatback turducken sirloin pork pork belly short loin. </p>
+	  <p><img src="bild_1.jpg"  alt="bild 1" class="floatleft" />Beef ribs spare ribs pork belly filet mignon fatback, strip steak shankle tail shoulder prosciutto beef shank tri-tip leberkas. Beef ribs leberkas turkey, bresaola brisket rump speck. Prosciutto pork chop andouille speck pork loin. Ball tip pork chop jowl strip steak.
+	    
+	    Strip steak leberkas salami, pork cow pig rump pastrami capicola. Speck short loin andouille pancetta, ball tip jowl short ribs cow pig chuck tenderloin pastrami beef ribs sirloin. Filet mignon turducken meatball pancetta. </p>
+	  <p>Swine pig chicken, shank ham pancetta pork belly turkey hamburger shoulder. Cow kielbasa filet mignon venison, frankfurter pork loin ham hock chuck sirloin turkey beef leberkas tri-tip tail meatloaf.
+	    
+	    Bacon shoulder short ribs swine ham hock. T-bone tri-tip strip steak, beef ribs hamburger boudin fatback. </p>
+	  <p>Venison t-bone andouille rump, ham jerky pork spare ribs chuck drumstick meatloaf ribeye salami. Turducken tongue capicola strip steak sirloin drumstick, hamburger venison tenderloin bresaola beef ground round. Cow pastrami andouille ground round swine biltong, kielbasa bresaola.    </p>
+	  <p><img src="bild_2.jpg"  alt="bild 2" class="floatright"/>Short loin leberkas venison, flank chicken tongue brisket biltong jowl swine drumstick corned beef ground round turducken. Bacon pancetta drumstick spare ribs t-bone. Bresaola spare ribs boudin, hamburger andouille bacon biltong sirloin filet mignon swine t-bone shank ham hock fatback. Ground round drumstick leberkas kielbasa, ribeye prosciutto brisket pancetta. Shoulder rump boudin cow. </p>
+	
+  </div> <!-- main -->
+
+	<div id="footer">
+		<p>Floatdemo med bild från Kina</p>
+	</div> <!-- footer -->
+	
+</div> <!-- container -->
+
+</body>
+
+</html>
